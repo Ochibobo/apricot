@@ -71,3 +71,6 @@ Row oriented storage format (N-Ary) that is proprietary to the Opslag storage en
 ### Other concerns
 - [ ] Versioning
 - [ ] `ALTER TABLE ADD COLUMM` effect
+- [ ] `hypertables` vs a new column-oriented storage format.
+- [ ] `Defragmentation`
+  - [ ] This comes with `vacuuming`
