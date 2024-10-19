@@ -39,4 +39,29 @@ The extended storage file stores data that's too large to fit into the regular p
 
 `NULLs` are represented in a special way.
 
+The structure of records is dependent of a pre-declared `schema`. The `schema` belongs to an existing `database`. The `database` instance is stored in a __directory__. The schema contains the structure of the tuples/records in a table. It has the following __mandatory__ fields:
+  - [ ] Schema name
+  - [ ] Records array
+    - [ ] The array of records must contain a least one element
+    - [ ] Each entry has a `name` and `type`. The `name` is expected to be unique per defintion.
+    - [ ] The supported types for the record are:
+      - [ ] Serial for sequences
+      - [ ] All int bases
+      - [ ] All float types
+      - [ ] Booleans
+      - [ ] Varchar
+      - [ ] BigInt
+      - [ ] BigFloat
+      - [ ] UUID
+      - [ ] Char
+      - [ ] Proto
+      - [ ] Date
+      - [ ] Arrays
+      - [ ] Geo type
+      - [ ] Vector
+      - [ ] Polygon type
+      - [ ] Decimal
+      - [ ] Money/Currency
+
+Some of the types are primitives, others are not and are represented using the primitive types. The content of the schema is used to interpret the bytes upon reading into their supported type.
 
