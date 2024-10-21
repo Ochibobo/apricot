@@ -1,7 +1,7 @@
 /**
  * The Apricot Schema Header file definition
  */
-#ifndef SCHEMA_H
-#define SCHEMA_H
+#ifndef APRICOT_SCHEMA_H
+#define APRICOT_SCHEMA_H
 
 #endif
